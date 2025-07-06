@@ -1,19 +1,19 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Login from './pages/Login'
-import Profile from './pages/Profile'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
 
 const App = () => {
   return (
-    <div className="bg-[url('./src/assets/bgImage.jpg')]  bg-contain">
+    <div className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed bg-[url('./src/assets/bgImage.jpg')]">
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/profile' element={<Profile/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
